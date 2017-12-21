@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.afk.client.ads.demo.MainActivity">
+
+    <TableLayout
+        android:id="@+id/demo_app_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TableRow android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:text="@string/demo_app_id"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/demo_info_app_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="7"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:text="@string/demo_ad_slot_id"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/demo_info_ad_slot_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="7"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:text="@string/demo_imei"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/demo_info_imei"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="7"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="1dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:text="@string/demo_version"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/demo_info_version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="7"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:text="@string/demo_mode"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/demo_info_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="7"
+                android:background="#000000"
+                android:paddingBottom="4dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="4dp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/demo_show_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/demo_show"/>
+
+    <TextView
+        android:id="@+id/demo_log_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/demo_show_ad"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/demo_app_info"
+        android:paddingBottom="10dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="0dp"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

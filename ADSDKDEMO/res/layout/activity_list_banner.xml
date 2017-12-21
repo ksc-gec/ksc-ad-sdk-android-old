@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/list_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <com.afk.client.ads.demo.utils.ImageViewPlus
+            android:id="@+id/iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <!--  banner广告位 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/iv"
+            android:layout_alignTop="@id/iv"
+            android:layout_toRightOf="@id/iv">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/list_tv_title"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/list_tv_content" />
+
+            <Button
+                android:id="@+id/btn_down_load"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@id/tv_title"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_title"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/btn_download"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- 关闭图标-->
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/list_iv_close"
+            android:layout_centerVertical="true" />
+
+        <!--广告字样-->
+        <TextView
+            android:id="@+id/tv_ad"
+            android:layout_alignParentRight="true"
+            style="@style/list_tv_ad" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/show_banner_btn"
+        style="@style/list_show_btn"/>
+</RelativeLayout>
+

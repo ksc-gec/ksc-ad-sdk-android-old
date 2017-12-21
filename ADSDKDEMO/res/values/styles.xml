@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--信息流广告所有tv_title -->
+    <style name="list_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:maxEms">6</item>
+    </style>
+
+    <!--信息流中所有的广告字样-->
+    <style name="list_tv_ad">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:text">广告</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--信息流中插屏的按钮-->
+    <style name="list_insert_brn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:width">0dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--信息流中所有tv_content-->
+    <style name="list_tv_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxEms">10</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--信息流中所有iv_close-->
+    <style name="list_iv_close">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:src">@drawable/ic_close_icon</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--信息流中所有显示按钮-->
+    <style name="list_show_btn">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">显示广告</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--信息流中所有iv_title-->
+    <style name="list_iv_title">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

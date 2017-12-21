@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/native_outer_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/list_inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <!--icon和描述-->
+        <RelativeLayout
+            android:id="@+id/ll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <!-- 关闭图标-->
+            <ImageView
+                android:id="@+id/iv_close"
+                style="@style/list_iv_close" />
+
+            <!--图标-->
+            <com.afk.client.ads.demo.utils.ImageViewPlus
+                android:id="@+id/iv_title"
+                style="@style/list_iv_title"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_toRightOf="@id/iv_title"
+                style="@style/list_tv_title"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_toRightOf="@id/iv_title"
+                style="@style/list_tv_content"/>
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/btn_download"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_ad"
+                style="@style/list_tv_ad"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+        <!--主图 -->
+        <ImageView
+            android:id="@+id/native_main_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</RelativeLayout>

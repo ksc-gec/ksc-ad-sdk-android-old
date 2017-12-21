@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ad_Project_0331</string>
+    <string name="demo_show">显示广告</string>
+    <string name="demo_app_id">appId :</string>
+    <string name="demo_ad_slot_id">adSlotId :</string>
+    <string name="demo_imei">IMEI :</string>
+    <string name="demo_version">Version :</string>
+    <string name="demo_mode">Mode :</string>
+    <string name="demo_mode_debug">Debug</string>
+    <string name="demo_mode_release">Release</string>
+    <string name="demo_line_description">line description</string>
+</resources>

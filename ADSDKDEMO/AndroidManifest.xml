@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.afk.client.ads.demo">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="com.ks.client.ads.AdFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!--&lt;!&ndash;测试&ndash;&gt;-->
+        <meta-data
+            android:name="adsdk_appid"
+            android:value="6bq3bpop" />
+
+        <activity android:name=".video.MainActivity" />
+
+        <activity
+            android:name="com.ks.client.ads.AdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+
+        <activity
+            android:name="com.ks.permission.RequestPermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <service
+            android:name="com.ks.client.ads.DownloadService"
+            android:exported="false" />
+
+
+        <!--开屏广告-->
+        <activity
+            android:name=".SplashAdActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!--Banner广告-->
+        <activity
+            android:name=".BannerAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor" />
+        <!--功能列表-->
+        <activity
+            android:name=".FunctionListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--插屏广告-->
+        <activity
+            android:name=".InterstitialAdtivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor" /><!--信息流listview-->
+        <activity
+            android:name=".NativeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayAdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListBannerAdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InsertListActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
