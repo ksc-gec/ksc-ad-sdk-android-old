@@ -42,11 +42,11 @@
             android:screenOrientation="sensor"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
 
-        <activity
-            android:name="com.ks.permission.RequestPermissionActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="sensor"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <!--<activity-->
+            <!--android:name="com.ks.permission.RequestPermissionActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:screenOrientation="sensor"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />-->
 
         <service
             android:name="com.ks.client.ads.DownloadService"
